@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Iceland&family=Orbitron:wght@400..900&display=swap');
+        </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Iceland&display=swap" rel="stylesheet"> <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Team Robolution - Next Generation Robotics</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo" class="logo" />
+            <span class="brand-name">TEAM ROBOLUTION</span>
+        </div>
+        <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+    <ul class="nav-links">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="#intro">About Us</a></li>
+        <li><a href="#photo">Gallery</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#alumni">Alumni</a></li>
+        <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Video Background -->
+    <video id="background-video" autoplay muted loop>
+        <source src="13495-24864905.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <!-- Particle Background -->
+    <div class="particle-bg">
+        <!-- Particles dynamically added via JavaScript -->
+    </div>
+
+    <!-- Updated Hero Section -->
+    <header section id="home" class="hero futuristic-section">
+        <div class="hero-content">
+            <h1>TEAM ROBOLUTION</h1>
+            <p>Where The Revolution Begins...</p>
+        </div>
+    </header>
+    
+    <section id="intro" class="intro-section">
+        <div class="intro-container">
+            <h2 class="glow-text">The Robotics Club</h2>
+            <p class="intro-text">
+                Welcome to the cutting edge of innovation. Our TEAM ROBOLUTION club merges advanced AI algorithms with next-generation hardware to create autonomous systems that push the boundaries of what's possible. Join a community of forward-thinking engineers, programmers, and designers shaping the future.
+            </p>
+            <div class="tech-lines">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <div class="tech-stats">
+                <div class="stat">
+                    <span class="stat-number">10+</span>
+                    <span class="stat-label">Active Projects</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">30+</span>
+                    <span class="stat-label">Team Members</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">Our Alumni</span>
+                </div>
+            </div>
+            <div class="cta-container">
+                <a href="https://chat.whatsapp.com/LsnAqeMoXbc60shpfACYFq"> <button class="join-btn">Join Our Community</button> 
+                <div class="pulse-ring"></div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Team Gallery Section -->
+    <section id="photo" class="team-gallery-section">
+        <h2>Our Journey</h2>
+        <div class="gallery-container">
+            <div class="gallery-track">
+                <!-- First set of images -->
+                <div class="gallery-item">
+                    <img src="Screenshot (4).png" alt="Team Event 1" class="gallery-image">
+                    <div class="image-caption">Team Competition 2024</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="Screenshot 2025-03-02 003940.png" alt="Team Event 2" class="gallery-image">
+                    <div class="image-caption">Project Showcase</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="Screenshot 2025-03-02 115809.png" alt="Team Event 3" class="gallery-image">
+                    <div class="image-caption">Workshop Session</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="team4.jpg" alt="Team Event 4" class="gallery-image">
+                    <div class="image-caption">Team Building</div>
+                </div>
+                <!-- Duplicate set for seamless loop with the same structure -->
+                <div class="gallery-item">
+                    <img src="Screenshot (4).png" alt="Team Event 1" class="gallery-image">
+                    <div class="image-caption">Team Competition 2024</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="Screenshot 2025-03-02 003940.png" alt="Team Event 2" class="gallery-image">
+                    <div class="image-caption">Project Showcase</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="Screenshot 2025-03-02 115809.png" alt="Team Event 3" class="gallery-image">
+                    <div class="image-caption">Workshop Session</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="team4.jpg" alt="Team Event 4" class="gallery-image">
+                    <div class="image-caption">Team Building</div>
+                </div>
+            </div>
+        </div>
+        <div class="view-all-members">
+            <a href="team-gallery-page.html" class="view-all-link">View Full Gallery</a>
+        </div>
+    </section>
+
+
+      <div class="robot-animation">
+        <svg class="svg-robot" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <!-- Robot head -->
+          <rect x="35" y="20" width="30" height="25" rx="5" fill="#102040" stroke="#00e5ff" stroke-width="1.5"/>
+          
+          <!-- Robot eyes -->
+          <circle cx="45" cy="32" r="5" fill="#00e5ff">
+            <animate attributeName="opacity" values="0.5;1;0.5" dur="3s" repeatCount="indefinite"/>
+          </circle>
+          <circle cx="55" cy="32" r="5" fill="#00e5ff">
+            <animate attributeName="opacity" values="0.5;1;0.5" dur="3s" repeatCount="indefinite"/>
+          </circle>
+          
+          <!-- Robot mouth/indicator -->
+          <rect x="40" y="40" width="20" height="2" fill="#00e5ff">
+            <animate attributeName="width" values="20;15;20" dur="5s" repeatCount="indefinite"/>
+          </rect>
+          
+          <!-- Robot body -->
+          <rect x="30" y="50" width="40" height="30" rx="3" fill="#102040" stroke="#00e5ff" stroke-width="1.5"/>
+          
+          <!-- Robot details -->
+          <circle cx="40" cy="60" r="3" fill="#0050ff"/>
+          <circle cx="60" cy="60" r="3" fill="#0050ff"/>
+          <rect x="45" y="55" width="10" height="10" fill="#0a0a1a" stroke="#00e5ff" stroke-width="1"/>
+          
+          <!-- Robot arms -->
+          <rect x="20" y="50" width="10" height="5" rx="2" fill="#102040" stroke="#00e5ff" stroke-width="1">
+            <animateTransform attributeName="transform" type="rotate" from="-5 30 52.5" to="5 30 52.5" dur="2s" repeatCount="indefinite" additive="sum"/>
+          </rect>
+          <rect x="70" y="50" width="10" height="5" rx="2" fill="#102040" stroke="#00e5ff" stroke-width="1">
+            <animateTransform attributeName="transform" type="rotate" from="5 70 52.5" to="-5 70 52.5" dur="2s" repeatCount="indefinite" additive="sum"/>
+          </rect>
+          
+          <!-- Robot legs -->
+          <rect x="35" y="80" width="8" height="15" rx="2" fill="#102040" stroke="#00e5ff" stroke-width="1"/>
+          <rect x="57" y="80" width="8" height="15" rx="2" fill="#102040" stroke="#00e5ff" stroke-width="1"/>
+        </svg>
+      </div>
+    
+  
+    <section id="about" class="capabilities">
+        <h2>Core Capabilities</h2>
+        <div class="card-grid">
+            <div class="card">
+                <i class="fas fa-robot fa-3x"></i>
+                <h3>Robotics Programming</h3>
+                <p>Crafting intelligent algorithms for autonomous navigation, sensor integration, and precise control.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-brain fa-3x"></i>
+                <h3>AI & Machine Learning</h3>
+                <p>Building smart systems that learn, adapt, and optimize performance through data-driven models.</p>
+            </div>
+            <div class="card">
+                <svg class="card-icon" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 14l-4-4h8l-4 4zM12 8c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/>
+                </svg>
+                <h3>PCB Designing</h3>
+                <p>We design custom PCBs for our robots, handling everything from schematics to layout, ensuring compact and efficient hardware tailored to each project.
+
+.</p>
+            </div>
+  
+            <div class="card">
+                <i class="fas fa-microchip fa-3x"></i>
+                <h3>Embedded Systems</h3>
+                <p>Developing efficient firmware for seamless hardware-software integration and real-time performance.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-cube fa-3x"></i>
+                <h3>Designing</h3>
+                <p>We designs and prototypes custom robotic parts using advanced 3D CAD tools like Fusion 360 and SolidWorks..</p>
+            </div>
+        </div>
+    </section>    
+
+<!-- ===== Faculty Section ===== -->
+<section id="faculty" class="faculty-section">
+    <h2>Our Faculty Mentors</h2>
+    <div class="faculty-container">
+        <!-- Faculty Member 1 -->
+        <div class="faculty-card">
+            <div class="faculty-img-container">
+                <img src="3407305.jpg" alt="Dr. Gaurav Bhardwaj" class="faculty-img">
+            </div>
+            <div class="faculty-details">
+                <h3>Dr. Gaurav Bhardwaj</h3>
+                <p class="faculty-title">Electronics and Communication</p>
+                <div class="faculty-testimonial">
+                    <p>"Team Robolution's innovative approach to autonomous systems is groundbreaking."</p>
+                </div>
+                <ul class="faculty-info">
+                    <li><strong>Expertise:</strong> Autonomous Navigation, AI</li>
+                    <li><strong>Years with Team:</strong> 5</li>
+                    <li><strong>Email:</strong> johndoe@university.edu</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Faculty Member 2 -->
+        <div class="faculty-card">
+            <div class="faculty-img-container">
+                <img src="Screenshot 2025-03-02 115809.png" alt="Mugdha Shrivastava" class="faculty-img">
+            </div>
+            <div class="faculty-details">
+                <h3>Mugdha Srivastava</h3>
+                <p class="faculty-title">Mechanical Department</p>
+                <div class="faculty-testimonial">
+                    <p>"The team's work on machine learning algorithms has real-world impact."</p>
+                </div>
+                <ul class="faculty-info">
+                    <li><strong>Expertise:</strong> Machine Learning, Neural Networks</li>
+                    <li><strong>Years with Team:</strong> 3</li>
+                    <li><strong>Email:</strong> janesmith@university.edu</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- ===== NEW: Team Section ===== -->
+    <section id="team" class="team-section">
+        <h2>Our Core Team</h2>
+        <div class="team-container">
+            <!-- Team Member 1 -->
+            <div class="team-card">
+                <div class="team-img-container">
+                    <img src="ankita.jpg" alt="Captain" class="team-img">
+                </div>
+                <div class="team-details">
+                    <h3>Ankita Jha</h3>
+                    <p class="team-title">Captain</p>
+                </div>
+            </div>
+
+            <!-- Team Member 2 -->
+            <div class="team-card">
+                <div class="team-img-container">
+                    <img src="images/vice-captain.jpg" alt="Vice Captain" class="team-img">
+                </div>
+                <div class="team-details">
+                    <h3>Deepak Pal</h3>
+                    <p class="team-title">Vice Captain</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Link to All Members -->
+        <div class="view-all-members">
+            <a href="all-members.html" class="view-all-link">See All Members</a>
+        </div>
+    </section>
+
+    <!-- ===== NEW: Projects Section ===== -->
+    <section id="projects" class="projects-section">
+        <h2>Our Projects</h2>
+        <div class="projects-container">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <div class="project-img-container">
+                    <img src="Screenshot 2025-03-02 115809.png" alt="Autonomous Robot" class="project-img" />
+                </div>
+                <div class="project-details">
+                    <h3>Autonomous Rover</h3>
+                    <p class="project-title">AI-powered navigation system</p>
+                    <div class="project-description">
+                        <p>"Designed for rough terrains with advanced AI capabilities."</p>
+                    </div>
+                    <ul class="project-info">
+                        <li><strong>Category:</strong> Robotics</li>
+                        <li><strong>Status:</strong> Completed</li>
+                        <li><strong>Year:</strong> 2025</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card">
+                <div class="project-img-container">
+                    <img src="Screenshot (4).png" alt="Robotic Arm" class="project-img" />
+                </div>
+                <div class="project-details">
+                    <h3>Precision Robotic Arm</h3>
+                    <p class="project-title">Industrial-grade arm</p>
+                    <div class="project-description">
+                        <p>"Equipped with computer vision for precision tasks."</p>
+                    </div>
+                    <ul class="project-info">
+                        <li><strong>Category:</strong> Robotics</li>
+                        <li><strong>Status:</strong> In Progress</li>
+                        <li><strong>Year:</strong> 2025</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Existing Gallery Section -->
+    <section id="gallery" class="collaborations">
+        <h2>Our Achievements</h2>
+        <div class="logo-grid">
+            <a href="achievement1.html">
+                <img src="feature1.jpg" alt="Feature Image" />
+            </a>
+            <a href="achievement2.html">
+                <img src="images/background.png" alt="Background Image" />
+            </a>
+            <a href="achievement3.html">
+                <img src="Screenshot 2025-03-02 003940.png" alt="Placeholder" />
+            </a>
+        </div>
+    </section>
+<!-- ===== NEW: Alumni Section ===== -->
+<section id="alumni" class="alumni-section">
+    <h2>Our Alumni</h2>
+    <div class="alumni-container">
+        <!-- Alumni Member 1 -->
+        <div class="alumni-card">
+            <div class="alumni-img-container">
+                <img src="Aman-Sir.png" alt="Alumni Member 1" class="alumni-img">
+            </div>
+            <div class="alumni-details">
+                <h3>Aman Bhatt</h3>
+                <p class="alumni-role">Former Team Captian</p>
+                <p class="alumni-title">Software Engineer at Siemens</p>
+                <p class="alumni-year">Class of 2021</p>
+                <div class="alumni-branch">Electrical Engineering</div>
+                <div class="alumni-description">
+                    <p>"My experience with Team Robolution shaped my career in robotics and AI."</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Alumni Member 2 -->
+        <div class="alumni-card">
+            <div class="alumni-img-container">
+                <img src="images/alumni2.jpg" alt="Alumni Member 2" class="alumni-img">
+            </div>
+            <div class="alumni-details">
+                <h3>Ankur</h3>
+                <p class="alumni-role">Former Electronics Lead</p>
+                <p class="alumni-title">Robotics Researcher at MIT</p>
+                <p class="alumni-year">Class of 2022</p>
+                <div class="alumni-description">
+                    <p>"The skills I developed at Team Robolution were instrumental in my research work."</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Alumni Member 3 -->
+        <div class="alumni-card">
+            <div class="alumni-img-container">
+                <img src="images/alumni3.jpg" alt="Alumni Member 3" class="alumni-img">
+            </div>
+            <div class="alumni-details">
+                <h3>Amit Kumar</h3>
+                <p class="alumni-title">Founder of TechDynamics</p>
+                <p class="alumni-year">Class of 2021</p>
+                <div class="alumni-description">
+                    <p>"Team Robolution gave me the foundation to start my own tech company."</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Link to All Alumni -->
+    <div class="view-all-alumni">
+        <a href="alumni.html" class="view-all-link">View All Alumni</a>
+    </div>
+</section>
+ <!-- ===== Improved Contact Section ===== -->
+<section id="contact" class="contact-section futuristic-section">
+    <h2>Get In Touch</h2>
+    <div class="contact-container">
+        <div class="contact-info">
+            <div class="contact-card">
+                <i class="fas fa-envelope"></i>
+                <h3>Email Us</h3>
+                <a href="mailto:teamrobolution@gmail.com">teamrobolution@gmail.com</a>
+            </div>
+            <div class="contact-card">
+                <i class="fas fa-phone-alt"></i>
+                <h3>Call Us</h3>
+                <a href="tel:+8521276219">+8521276219</a>
+            </div>
+            <div class="contact-card">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Visit Us</h3>
+                <a href="https://maps.app.goo.gl/oiG2VQ2gPWMXDZP59">RUSTAMJI INSTITUTE OF TECHNOLOGY, BSF ACADEMY, GWALIOR, 475005, MADHYA-PRADESH</a>
+            </div>
+        </div>
+        <form class="waitlist-form">
+            <h3>Stay Updated</h3>
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <button type="submit" class="futuristic-btn">Get Updates</button>
+        </form>
+    </div>
+</section>
+
+<!-- ===== Footer ===== -->
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-logo-container">
+            <img src="logo.png" alt="Team Robolution Logo" class="footer-logo" />
+            <span class="footer-brand-name">TEAM ROBOLUTION</span>
+        </div>
+        <p class="footer-text">Pioneering the future of robotics.</p>
+        <div class="footer-social-links">
+            <a href="https://instagram.com/team_robolution" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://linkedin.com/company/teamrobolution" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://twitter.com/teamrobolution" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://github.com/teamrobolution" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Team Robolution. All rights reserved.</p>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Robolution - Photo Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Iceland&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Reuse existing navbar -->
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo" class="logo" />
+            <span class="brand-name">TEAM ROBOLUTION</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#about">About Us</a></li>
+            <li><a href="index.html#team">Team</a></li>
+            <li><a href="index.html#projects">Projects</a></li>
+            <li><a href="index.html#gallery">Gallery</a></li>
+            <li><a href="alumni.html">Alumni</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+            <li><a href="all-members.html">All Members</a></li>
+            <li><a href="team-gallery-page.html" class="active">TEAM GALLERY</a> </a></li>
+   
+        </ul>
+    </nav>
+
+    <!-- Gallery Header -->
+    <section class="gallery-header">
+        <h1>Team Robolution Gallery</h1>
+        <div class="filter-container">
+            <button class="filter-btn active" data-filter="all">All Events</button>
+            <button class="filter-btn" data-filter="competitions">Competitions</button>
+            <button class="filter-btn" data-filter="workshops">Workshops</button>
+            <button class="filter-btn" data-filter="projects">Projects</button>
+            <button class="filter-btn" data-filter="team-building">Team Building</button>
+        </div>
+    </section>
+
+    <!-- Event Categories -->
+    <div class="event-categories">
+        <!-- Competitions Section -->
+        <section class="event-section" data-category="competitions">
+            <h2 class="event-title">Competitions & Achievements</h2>
+            <div class="event-description">
+                <p>Our journey through various robotics competitions and achievements</p>
+            </div>
+            <div class="photo-grid">
+                <div class="photo-card">
+                    <img src="Screenshot (4).png" alt="Competition 1">
+                    <div class="photo-info">
+                        <h3>National Robotics Championship</h3>
+                        <p>March 2024</p>
+                    </div>
+                </div>
+                <!-- Add more competition photos here -->
+            </div>
+        </section>
+
+        <!-- Workshops Section -->
+        <section class="event-section" data-category="workshops">
+            <h2 class="event-title">Workshops & Training</h2>
+            <div class="event-description">
+                <p>Learning and growing together through hands-on workshops</p>
+            </div>
+            <div class="photo-grid">
+                <div class="photo-card">
+                    <img src="Screenshot 2025-03-02 003940.png" alt="Workshop 1">
+                    <div class="photo-info">
+                        <h3>AI & Robotics Workshop</h3>
+                        <p>February 2024</p>
+                    </div>
+                </div>
+                <!-- Add more workshop photos here -->
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="event-section" data-category="projects">
+            <h2 class="event-title">Project Showcases</h2>
+            <div class="event-description">
+                <p>Highlighting our innovative robotics projects</p>
+            </div>
+            <div class="photo-grid">
+                <div class="photo-card">
+                    <img src="Screenshot 2025-03-02 115809.png" alt="Project 1">
+                    <div class="photo-info">
+                        <h3>Autonomous Robot Development</h3>
+                        <p>January 2024</p>
+                    </div>
+                </div>
+                <!-- Add more project photos here -->
+            </div>
+        </section>
+
+        <!-- Team Building Section -->
+        <section class="event-section" data-category="team-building">
+            <h2 class="event-title">Team Activities</h2>
+            <div class="event-description">
+                <p>Moments of team bonding and collaboration</p>
+            </div>
+            <div class="photo-grid">
+                <div class="photo-card">
+                    <img src="team4.jpg" alt="Team Building 1">
+                    <div class="photo-info">
+                        <h3>Annual Team Meetup</h3>
+                        <p>December 2023</p>
+                    </div>
+                </div>
+                <!-- Add more team building photos here -->
+            </div>
+        </section>
+    </div>
+
+    <!-- Reuse existing footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo-container">
+                <img src="logo.png" alt="Team Robolution Logo" class="footer-logo" />
+                <span class="footer-brand-name">TEAM ROBOLUTION</span>
+            </div>
+            <p class="footer-text">Pioneering the future of robotics.</p>
+            <div class="footer-social-links">
+                <a href="https://instagram.com/team_robolution" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com/company/teamrobolution" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://twitter.com/teamrobolution" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://github.com/teamrobolution" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Team Robolution. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="gallery.js"></script>
+</body>
+</html>

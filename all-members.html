@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="pre" href="https://fonts.googleapis.com">
+    <link rel="pre" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Iceland&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Members - Team Robolution</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <script defer src="script.js"></script>
+    <script defer src="members.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo" class="logo" />
+            <span class="brand-name">TEAM ROBOLUTION</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#about">About Us</a></li>
+            <li><a href="index.html#team">Team</a></li>
+            <li><a href="index.html#projects">Projects</a></li>
+            <li><a href="index.html#gallery">Gallery</a></li>
+            <li><a href="alumni.html">Alumni</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+            <li><a href="all-members.html" class="active">All Members</a></li>
+        </ul>
+    </nav>
+
+    <!-- Video Background -->
+    <video id="background-video" autoplay muted loop>
+        <source src="13495-24844905.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    
+    <!-- Particle Background -->
+    <div class="particle-bg">
+        <!-- Particles dynamically added via JavaScript -->
+    </div>
+
+    <!-- Water ripple effect container -->
+    <canvas id="water-ripple"></canvas>
+
+    <!-- Hero Section -->
+    <header class="hero futuristic-section">
+        <div class="hero-content">
+            <h1>OUR TEAM MEMBERS</h1>
+            <p>Building the Future Through Innovation...</p>
+        </div>
+    </header>
+
+    <!-- Members Section -->
+    <section id="members" class="alumni-section">
+        <h2 class="futuristic-hover">Current Members</h2>
+        
+        <div class="filter-bar">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="Team Captian">Team Captain</button>
+            <button class="filter-btn" data-filter="Vice Captian">Vice Captain</button>
+            <button class="filter-btn" data-filter="Social Head">Social Head</button>
+            <button class="filter-btn" data-filter="Mechanical Head">Mechanical Head</button>
+            <button class="filter-btn" data-filter="Coding Dept">Coding Dept</button>
+            <button class="filter-btn" data-filter="Electronics Dept">Electronics Dept</button>
+            <button class="filter-btn" data-filter="Mechanical Dept">Mechanical Dept</button>
+        </div>
+        
+        <div class="alumni-container">
+            <!-- Member 1 -->
+            <div class="alumni-card" data-year="Team Captian">
+                <div class="alumni-img-container">
+                    <div class="img-overlay"></div>
+                    <img src="ankita.jpg" alt="Ankita Jha" class="alumni-img">
+                </div>
+                <div class="alumni-details">
+                    <h3>Ankita Jha</h3>
+                    <p class="alumni-title">Team Captain</p>
+                    <p class="alumni-branch">Electronics & Communication</p>
+                    <p class="alumni-year">3rd Year</p>
+                    <div class="alumni-bio">
+                        <p>To be edited</p>
+                    </div>
+                    <div class="alumni-social">
+                        <a href="https://linkedin.com/in/ankitajha" target="_blank" class="social-btn">
+                            <i class="fab fa-linkedin"></i> 
+                        </a>
+                        <a href="https://www.instagram.com/ankitaaa_5/" target="_blank" class="social-btn">
+                            <i class="fab fa-instagram"></i>  
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Member 2 -->
+            <div class="alumni-card" data-year="Vice Captian">
+                <div class="alumni-img-container">
+                    <div class="img-overlay"></div>
+                    <img src="images/member2.jpg" alt="Deepak Pal" class="alumni-img">
+                </div>
+                <div class="alumni-details">
+                    <h3>Deepak Pal</h3>
+                    <p class="alumni-title">Vice Captain</p>
+                    <p class="alumni-branch">Electronics & Communication</p>
+                    <p class="alumni-year">3rd Year</p>
+                    <div class="alumni-bio">
+                        <p>To be edited</p>
+                    </div>
+                    <div class="alumni-social">
+                        <a href="https://linkedin.com/in/deepakpal" target="_blank" class="social-btn">
+                            <i class="fab fa-linkedin"></i> 
+                        </a>
+                        <a href="https://instagram.com/deepak_pal" target="_blank" class="social-btn">
+                            <i class="fab fa-instagram"></i> 
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Member 3 -->
+            <div class="alumni-card" data-year="Social Head">
+                <div class="alumni-img-container">
+                    <div class="img-overlay"></div>
+                    <img src="images/member3.jpg" alt="Sandhya Tomar" class="alumni-img">
+                </div>
+                <div class="alumni-details">
+                    <h3>Sandhya Tomar</h3>
+                    <p class="alumni-title">Social Head</p>
+                    <p class="alumni-branch">Computer Science & Engineering</p>
+                    <p class="alumni-year">3rd Year</p>
+                    <div class="alumni-bio">
+                        <p>To be edited</p>
+                    </div>
+                    <div class="alumni-social">
+                        <a href="https://linkedin.com/in/sandhyatomar" target="_blank" class="social-btn">
+                            <i class="fab fa-linkedin"></i> 
+                        </a>
+                        <a href="https://www.instagram.com/itsandhyatomar/" target="_blank" class="social-btn">
+                            <i class="fab fa-instagram"></i> 
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Member 4 -->
+            <div class="alumni-card" data-year="Mechanical Head">
+                <div class="alumni-img-container">
+                    <div class="img-overlay"></div>
+                    <img src="snehal.jpg" alt="Snehal Dahiya" class="alumni-img">
+                </div>
+                <div class="alumni-details">
+                    <h3>Snehal Dahiya</h3>
+                    <p class="alumni-title">Mechanical Head</p>
+                    <p class="alumni-branch">Information Technology</p>
+                    <p class="alumni-year">3rd Year</p>
+                    <div class="alumni-bio">
+                        <p>To be edited</p>
+                    </div>
+                    <div class="alumni-social">
+                        <a href="https://linkedin.com/in/snehaldahiya" target="_blank" class="social-btn">
+                            <i class="fab fa-linkedin"></i> 
+                        </a>
+                        <a href="https://www.instagram.com/snehal_dahiya.2209/" target="_blank" class="social-btn">
+                            <i class="fab fa-instagram"></i> 
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Member 5 -->
+            <div class="alumni-card" data-year="Coding Dept">
+                <div class="alumni-img-container">
+                    <div class="img-overlay"></div>
+                    <img src="rajesh.jpg" alt="Rajesh Kumar" class="alumni-img">
+                </div>
+                <div class="alumni-details">
+                    <h3>Rajesh Kumar</h3>
+                    <p class="alumni-title">Coding Dept</p>
+                    <p class="alumni-branch">Information Technology</p>
+                    <p class="alumni-year">2nd Year</p>
+                    <div class="alumni-bio">
+                        <p>AI & ML</p>
+                    </div>
+                    <div class="alumni-social">
+                        <a href="https://linkedin.com/in/rajeshkumar" target="_blank" class="social-btn">
+                            <i class="fab fa-linkedin"></i> 
+                        </a>
+                        <a href="https://instagram.com/r.rajesh2k04/" target="_blank" class="social-btn">
+                            <i class="fab fa-instagram"></i> 
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Member 6 -->
+            <div class="alumni-card" data-year="Electronics Dept">
+                <div class="alumni-img-container">
+                    <div class="img-overlay"></div>
+                    <img src="prateek.jpg" alt="Prateek Sarkar" class="alumni-img">
+                </div>
+                <div class="alumni-details">
+                    <h3>Prateek Sarkar</h3>
+                    <p class="alumni-title">Electronics Dept</p>
+                    <p class="alumni-branch">Electronics & Communication</p>
+                    <p class="alumni-year">2nd Year</p>
+                    <div class="alumni-bio">
+                        <p>PCB Design</p>
+                    </div>
+                    <div class="alumni-social">
+                        <a href="https://linkedin.com/in/prateeksarkar" target="_blank" class="social-btn">
+                            <i class="fab fa-linkedin"></i> 
+                        </a>
+                        <a href="https://www.instagram.com/prateek__sarkar/" target="_blank" class="social-btn">
+                            <i class="fab fa-instagram"></i> 
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Member 7 -->
+            <div class="alumni-card" data-year="Electronics Dept">
+                <div class="alumni-img-container">
+                    <div class="img-overlay"></div>
+                    <img src="sandipan.jpg" alt="Sandipan Dhali" class="alumni-img">
+                </div>
+                <div class="alumni-details">
+                    <h3>Sandipan Dhali</h3>
+                    <p class="alumni-title">Electronics Dept</p>
+                    <p class="alumni-branch">Electrical Engineering</p>
+                    <p class="alumni-year">2nd Year</p>
+                    <div class="alumni-bio">
+                        <p>Aero-Department</p>
+                    </div>
+                    <div class="alumni-social">
+                        <a href="https://linkedin.com/in/sandipandhali" target="_blank" class="social-btn">
+                            <i class="fab fa-linkedin"></i> 
+                        </a>
+                        <a href="https://www.instagram.com/sandipann___/" target="_blank" class="social-btn">
+                            <i class="fab fa-instagram"></i> 
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Member 8 -->
+            <div class="alumni-card" data-year="Coding Dept">
+                <div class="alumni-img-container">
+                    <div class="img-overlay"></div>
+                    <img src="adhyyan.jpg" alt="Adhyyan Gupta" class="alumni-img">
+                </div>
+                <div class="alumni-details">
+                    <h3>Adhyyan Gupta</h3>
+                    <p class="alumni-title">Coding Dept</p>
+                    <p class="alumni-branch">Computer Science & Engineering</p>
+                    <p class="alumni-year">2nd Year</p>
+                    <div class="alumni-bio">
+                        <p>To be edited</p>
+                    </div>
+                    <div class="alumni-social">
+                        <a href="https://linkedin.com/in/adhyyangupta" target="_blank" class="social-btn">
+                            <i class="fab fa-linkedin"></i> 
+                        </a>
+                        <a href="https://www.instagram.com/adhyyan.gupta/" target="_blank" class="social-btn">
+                            <i class="fab fa-instagram"></i> 
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Member 9 -->
+            <div class="alumni-card" data-year="Coding & Electronics Dept">
+                <div class="alumni-img-container">
+                    <div class="img-overlay"></div>
+                    <img src="shlok.jpg" alt="Shlok Gupta" class="alumni-img">
+                </div>
+                <div class="alumni-details">
+                    <h3>Shlok Gupta</h3>
+                    <p class="alumni-title">Coding & Electronics Dept</p>
+                    <p class="alumni-branch">Information Technology</p>
+                    <p class="alumni-year">2nd Year</p>
+                    <div class="alumni-bio">
+                        <p>Autonomous Bots</p>
+                    </div>
+                    <div class="alumni-social">
+                        <a href="https://linkedin.com/in/shlokgupta" target="_blank" class="social-btn">
+                            <i class="fab fa-linkedin"></i> 
+                        </a>
+                        <a href="https://www.instagram.com/shguloptka05/" target="_blank" class="social-btn">
+                            <i class="fab fa-instagram"></i> 
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Member 10 -->
+            <div class="alumni-card" data-year="Coding Dept">
+                <div class="alumni-img-container">
+                    <div class="img-overlay"></div>
+                    <img src="sk.jpg" alt="SK" class="alumni-img">
+                </div>
+                <div class="alumni-details">
+                    <h3>SK</h3>
+                    <p class="alumni-title">Coding Dept</p>
+                    <p class="alumni-branch">Computer Science & Engineering</p>
+                    <p class="alumni-year">2nd Year</p>
+                    <div class="alumni-bio">
+                        <p>To be edited</p>
+                    </div>
+                    <div class="alumni-social">
+                        <a href="https://linkedin.com/in/unknown_sk47_" target="_blank" class="social-btn">
+                            <i class="fab fa-linkedin"></i> 
+                        </a>
+                        <a href="https://instagram.com/unknown_sk47_" target="_blank" class="social-btn">
+                            <i class="fab fa-instagram"></i> 
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Member 11 -->
+            <div class="alumni-card" data-year="Mechanical Dept">
+                <div class="alumni-img-container">
+                    <div class="img-overlay"></div>
+                    <img src="adarsh.jpg" alt="Adarsh Kumar Pachahara" class="alumni-img">
+                </div>
+                <div class="alumni-details">
+                    <h3>Adarsh Kumar Pachahara</h3>
+                    <p class="alumni-title">Mechanical Dept</p>
+                    <p class="alumni-branch">Computer Science & Engineering</p>
+                    <p class="alumni-year">2nd Year</p>
+                    <div class="alumni-bio">
+                        <p>To be edited</p>
+                    </div>
+                    <div class="alumni-social">
+                        <a href="https://linkedin.com/in/adarshkumarpachahara" target="_blank" class="social-btn">
+                            <i class="fab fa-linkedin"></i> 
+                        </a>
+                        <a href="https://instagram.com/adarshq1" target="_blank" class="social-btn">
+                            <i class="fab fa-instagram"></i> 
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Member 12 -->
+            <div class="alumni-card" data-year="Coding Dept">
+                <div class="alumni-img-container">
+                    <div class="img-overlay"></div>
+                    <img src="nainisha.jpg" alt="Nainisha Bhairam" class="alumni-img">
+                </div>
+                <div class="alumni-details">
+                    <h3>Nainisha Bhairam</h3>
+                    <p class="alumni-title">Coding Dept</p>
+                    <p class="alumni-branch">Computer Science & Engineering</p>
+                    <p class="alumni-year">2nd Year</p>
+                    <div class="alumni-bio">
+                        <p>To be edited</p>
+                    </div>
+                    <div class="alumni-social">
+                        <a href="https://linkedin.com/in/nainishabhairam" target="_blank" class="social-btn">
+                            <i class="fab fa-linkedin"></i> 
+                        </a>
+                        <a href="https://instagram.com/nainisha_bhairam" target="_blank" class="social-btn">
+                            <i class="fab fa-instagram"></i> 
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Member 13 -->
+            <div class="alumni-card" data-year="Electronics Dept">
+                <div class="alumni-img-container">
+                    <div class="img-overlay"></div>
+                    <img src="komal.jpg" alt="Komal Agree" class="alumni-img">
+                </div>
+                <div class="alumni-details">
+                    <h3>Komal Agree</h3>
+                    <p class="alumni-title">Electronics Dept</p>
+                    <p class="alumni-branch">Electronics & Communication Engineering</p>
+                    <p class="alumni-year">2nd Year</p>
+                    <div class="alumni-bio">
+                        <p>To be edited</p>
+                    </div>
+                    <div class="alumni-social">
+                        <a href="https://linkedin.com/in/komalagree" target="_blank" class="social-btn">
+                            <i class="fab fa-linkedin"></i> 
+                        </a>
+                        <a href="https://instagram.com/itzz_komal2704" target="_blank" class="social-btn">
+                            <i class="fab fa-instagram"></i>  
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Member 14 -->
+            <div class="alumni-card" data-year="Coding Dept">
+                <div class="alumni-img-container">
+                    <div class="img-overlay"></div>
+                    <img src="unnati.JPG" alt="Unnati Patel" class="alumni-img">
+                </div>
+                <div class="alumni-details">
+                    <h3>Unnati Patel</h3>
+                    <p class="alumni-title">Coding Dept</p>
+                    <p class="alumni-branch">Computer Science & Engineering</p>
+                    <p class="alumni-year">2nd Year</p>
+                    <div class="alumni-bio">
+                        <p>To be edited</p>
+                    </div>
+                    <div class="alumni-social">
+                        <a href="https://linkedin.com/in/unnatipatel" target="_blank" class="social-btn">
+                            <i class="fab fa-linkedin"></i> 
+                        </a>
+                        <a href="https://instagram.com/unnati_patel" target="_blank" class="social-btn">
+                            <i class="fab fa-instagram"></i>  
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Member 15 -->
+            <div class="alumni-card" data-year="Coding Dept">
+                <div class="alumni-img-container">
+                    <div class="img-overlay"></div>
+                    <img src="vishali.jpg" alt="Vaishali Patel" class="alumni-img">
+                </div>
+                <div class="alumni-details">
+                    <h3>Vaishali Patel</h3>
+                    <p class="alumni-title">Coding Dept</p>
+                    <p class="alumni-branch">Information Technology</p>
+                    <p class="alumni-year">2nd Year</p>
+                    <div class="alumni-bio">
+                        <p>To be edited</p>
+                    </div>
+                    <div class="alumni-social">
+                        <a href="https://linkedin.com/in/vaishalipatel" target="_blank" class="social-btn">
+                            <i class="fab fa-linkedin"></i> 
+                        </a>
+                        <a href="https://instagram.com/vaishali_patel2363" target="_blank" class="social-btn">
+                            <i class="fab fa-instagram"></i>  
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Member 16 -->
+            <div class="alumni-card" data-year="Coding Dept">
+                <div class="alumni-img-container">
+                    <div class="img-overlay"></div>
+                    <img src="akshit.jpg" alt="Akshit Chaudhary" class="alumni-img">
+                </div>
+                <div class="alumni-details">
+                    <h3>Akshit Chaudhary</h3>
+                    <p class="alumni-title">Coding Dept</p>
+                    <p class="alumni-branch">Computer Science & Engineering</p>
+                    <p class="alumni-year">2nd Year</p>
+                    <div class="alumni-bio">
+                        <p>To be edited</p>
+                    </div>
+                    <div class="alumni-social">
+                        <a href="https://linkedin.com/in/akshitchaudhary" target="_blank" class="social-btn">
+                            <i class="fab fa-linkedin"></i> 
+                        </a>
+                        <a href="https://instagram.com/eatmahdust/" target="_blank" class="social-btn">
+                            <i class="fab fa-instagram"></i>  
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Member 17 -->
+            <div class="alumni-card" data-year="Electronics Dept">
+                <div class="alumni-img-container">
+                    <div class="img-overlay"></div>
+                    <img src="images/member17.jpg" alt="Arun Upadhyay" class="alumni-img">
+                </div>
+                <div class="alumni-details">
+                    <h3>Arun Upadhyay</h3>
+                    <p class="alumni-title">Electronics Dept</p>
+                    <p class="alumni-branch">Electronics & Communication</p>
+                    <p class="alumni-year">2nd Year</p>
+                    <div class="alumni-bio">
+                        <p>To be edited</p>
+                    </div>
+                    <div class="alumni-social">
+                        <a href="https://linkedin.com/in/arunupadhyay" target="_blank" class="social-btn">
+                            <i class="fab fa-linkedin"></i> 
+                        </a>
+                        <a href="https://instagram.com/arun_upadhyay2306" target="_blank" class="social-btn">
+                            <i class="fab fa-instagram"></i>  
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Member 18 -->
+            <div class="alumni-card" data-year="Mechanical Dept">
+                <div class="alumni-img-container">
+                    <div class="img-overlay"></div>
+                    <img src="bajrang.jpg" alt="Bajrang Lal" class="alumni-img">
+                </div>
+                <div class="alumni-details">
+                    <h3>Bajrang Lal</h3>
+                    <p class="alumni-title">Mechanical Dept</p>
+                    <p class="alumni-branch">Electrical Engineering</p>
+                    <p class="alumni-year">2nd Year</p>
+                    <div class="alumni-bio">
+                        <p>To be edited</p>
+                    </div>
+                    <div class="alumni-social">
+                        <a href="https://linkedin.com/in/bajranglal" target="_blank" class="social-btn">
+                            <i class="fab fa-linkedin"></i> 
+                        </a>
+                        <a href="https://instagram.com/bajrang_lal" target="_blank" class="social-btn">
+                            <i class="fab fa-instagram"></i>  
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Member 19 -->
+            <div class="alumni-card" data-year="Mechanical Dept">
+                <div class="alumni-img-container">
+                    <div class="img-overlay"></div>
+                    <img src="varneeka.jpg" alt="Varneeka Rastogi" class="alumni-img">
+                </div>
+                <div class="alumni-details">
+                    <h3>Varneeka Rastogi</h3>
+                    <p class="alumni-title">Mechanical Dept</p>
+                    <p class="alumni-branch">Mechanical Engineering</p>
+                    <p class="alumni-year">2nd Year</p>
+                    <div class="alumni-bio">
+                        <p>To be edited</p>
+                    </div>
+                    <div class="alumni-social">
+                        <a href="https://linkedin.com/in/varneeka" target="_blank" class="social-btn">
+                            <i class="fab fa-linkedin"></i> 
+                        </a>
+                        <a href="https://instagram.com/varneeka_rastogi" target="_blank" class="social-btn">
+                            <i class="fab fa-instagram"></i>  
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo-container">
+                <img src="logo.png" alt="Team Robolution Logo" class="footer-logo" />
+                <span class="footer-brand-name">TEAM ROBOLUTION</span>
+            </div>
+            <p class="footer-text">Pioneering the future of robotics.</p>
+            <div class="footer-social-links">
+                <a href="https://instagram.com/team_robolution" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com/company/teamrobolution" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://twitter.com/teamrobolution" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://github.com/teamrobolution" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Team Robolution. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
