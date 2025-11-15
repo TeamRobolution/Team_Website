@@ -370,13 +370,14 @@
   }
   
   /* ==========================================
-     FACULTY, TEAM, PROJECTS & ALUMNI SECTION
+     FACULTY, TEAM, PROJECTS, ALUMNI & MEMBERS SECTION
      ========================================== */
   /* Common card styles */
   .faculty-container,
   .team-container,
   .projects-container,
-  .alumni-container {
+  .alumni-container,
+  .members-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -389,7 +390,8 @@
   .faculty-card,
   .team-card,
   .project-card,
-  .alumni-card {
+  .alumni-card,
+  .member-card {
     width: 300px;
     background: rgba(10, 20, 30, 0.3);
     border-radius: var(--border-radius);
@@ -404,7 +406,8 @@
   .faculty-img-container,
   .team-img-container,
   .project-img-container,
-  .alumni-img-container {
+  .alumni-img-container,
+  .member-img-container {
     height: 250px;
     overflow: hidden;
   }
@@ -412,7 +415,8 @@
   .faculty-img,
   .team-img,
   .project-img,
-  .alumni-img {
+  .alumni-img,
+  .member-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -423,7 +427,8 @@
   .faculty-details,
   .team-details,
   .project-details,
-  .alumni-details {
+  .alumni-details,
+  .member-details {
     padding: 1.5rem;
     background: rgba(10, 15, 25, 0.85);
     backdrop-filter: blur(10px);
@@ -432,7 +437,8 @@
   .faculty-card:hover,
   .team-card:hover,
   .project-card:hover,
-  .alumni-card:hover {
+  .alumni-card:hover,
+  .member-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 15px 30px var(--glow-shadow);
     border-color: var(--primary);
@@ -441,14 +447,15 @@
   .faculty-card:hover .faculty-img,
   .team-card:hover .team-img,
   .project-card:hover .project-img,
-  .alumni-card:hover .alumni-img {
+  .alumni-card:hover .alumni-img ,.member-card:hover .member-img {
     transform: scale(1.05);
   }
   
   .faculty-title,
   .team-title,
   .project-title,
-  .alumni-title {
+  .alumni-title,
+  .member-title {
     color: var(--accent);
     font-style: italic;
     margin-bottom: 1rem;
@@ -515,93 +522,178 @@
     transform: translateY(-3px);
   }
   
-  /* Center LinkedIn Button */
-  .alumni-social {
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
+  /* Alumni and Members Section Specific Styles */
+.alumni-section,
+.members-section {
+  padding: 8rem 2rem;
+  background: rgba(0, 0, 0, 0.8);
+  position: relative;
+}
+
+.filter-bar {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 3rem;
+  padding: 0 2rem;
+}
+
+/* Member specific styles matching alumni */
+.member-branch,
+.member-year,
+.alumni-branch,
+.alumni-year {
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.member-bio,
+.alumni-bio {
+  background: rgba(0, 200, 255, 0.05);
+  padding: 15px;
+  border-radius: 5px;
+  border-left: 3px solid var(--primary);
+  margin-top: 15px;
+  color: var(--light);
+}
+
+.member-bio p,
+.alumni-bio p {
+  margin: 0;
+  font-style: italic;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* Social buttons for both alumni and members */
+.member-social,
+.alumni-social {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+.member-social a,
+.alumni-social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  color: var(--primary);
+  font-size: 1.5rem;
+  transition: transform 0.3s ease, text-shadow 0.3s ease, color 0.3s ease;
+  border-radius: 50%;
+}
+
+.member-social a:hover,
+.alumni-social a:hover {
+  transform: scale(1.15);
+  text-shadow: 0 0 15px var(--primary);
+  color: var(--accent);
+}
+
+/* Ensure consistent card sizing */
+.member-card,
+.alumni-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.member-details,
+.alumni-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.member-details h3,
+.alumni-details h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary);
+}
+
+.member-title,
+.alumni-title {
+  color: var(--accent);
+  font-style: italic;
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+}
+
+.member-bio,
+.alumni-bio {
+  margin-top: auto;
+  margin-bottom: 1rem;
+}
+
+/* Animation states for filtering */
+.member-card,
+.alumni-card {
+  transition: opacity 0.3s ease, transform 0.3s ease, display 0.3s ease;
+}
+
+.member-card[style*="display: none"],
+.alumni-card[style*="display: none"] {
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+/* Responsive adjustments for filter bar */
+@media (max-width: 768px) {
+  .filter-bar {
+    gap: 0.5rem;
+    padding: 0 1rem;
   }
   
-  /* Team Gallery Section */
-.photo-section {
-    padding: 4rem 0;
-    background: rgba(0, 0, 0, 0.8);
-}
-
-.gallery-container {
+  .filter-btn {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .member-card,
+  .alumni-card {
     width: 100%;
-    overflow: hidden;
-    padding: 2rem 0;
+    max-width: 350px;
+  }
+  
+  .member-img-container,
+  .alumni-img-container {
+    height: 220px;
+  }
 }
 
-.gallery-track {
-    display: flex;
-    will-change: transform;
-    animation: scroll 20s linear infinite;
+@media (max-width: 480px) {
+  .filter-bar {
+    gap: 0.5rem;
+  }
+  
+  .filter-btn {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.85rem;
+  }
+  
+  .member-details h3,
+  .alumni-details h3 {
+    font-size: 1.1rem;
+  }
+  
+  .member-title,
+  .alumni-title {
+    font-size: 0.9rem;
+  }
+  
+  .member-img-container,
+  .alumni-img-container {
+    height: 200px;
+  }
 }
-
-.gallery-item {
-    min-width: 400px;
-    height: 300px;
-    margin: 0 20px;
-    position: relative;
-    transition: transform 0.3s ease;
-}
-
-.gallery-item:hover {
-    transform: scale(1.05);
-}
-
-.gallery-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 255, 0.2);
-    will-change: transform;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-}
-
-.image-caption {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.7);
-    color: white;
-    padding: 10px;
-    text-align: center;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    font-family: 'Orbitron', sans-serif;
-}
-
-@keyframes scroll {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-50%);
-    }
-}
-
-@media (max-width: 768px) {
-    .gallery-item {
-        min-width: 250px;
-        height: 200px;
-        margin: 0 10px;
-    }
-}
-/* Add this at the end of the SECTION STYLING section in your CSS */
-.section-divider {
-    width: 100%;
-    height: 1px;
-    background: linear-gradient(90deg, transparent, var(--primary), transparent);
-    box-shadow: 0 0 10px var(--glow-shadow);
-    margin: 4rem 0; /* Adjust spacing as needed */
-}
-/* ==========================================
+  /* ==========================================
      GALLERY SECTION
      ========================================== */
   .logo-grid {
